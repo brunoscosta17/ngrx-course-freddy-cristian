@@ -1,0 +1,21 @@
+<form id="form" #f="ngForm" (ngSubmit)="addUser()">
+    <div class="col-6">
+        <label>ID</label>
+        <input class="form-control" id="id" name="id" type="text" [(ngModel)]="user.id">
+    </div>
+    <div class="col-6">
+        <label>Name</label>
+        <input class="form-control" id="name" name="name" type="text" [(ngModel)]="user.name">
+    </div>
+    <div class="col-6">
+        <label>Age</label>
+        <input class="form-control" id="age" name="age" type="text" [(ngModel)]="user.age">
+    </div>
+    <div class="col-6">
+        <label>Profile</label>
+        <input class="form-control" id="profile" name="profile" type="text" [(ngModel)]="user.profile">
+    </div>
+    <div class="col-6">
+        <button class="btn btn-primary" type="submit">Add</button>
+    </div>
+</form>
