@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "User 1",
+      "age": 35,
+      "profile": "Admin"
+    },
+    {
+      "id": 2,
+      "name": "User 2",
+      "age": 28,
+      "profile": "Director"
+    },
+    {
+      "id": 3,
+      "name": "User 3",
+      "age": 45,
+      "profile": "Consultant"
+    },
+    {
+      "id": 4,
+      "name": "User 4",
+      "age": "22",
+      "profile": "Director"
+    },
+    {
+      "id": 5,
+      "name": "",
+      "age": 0,
+      "profile": "Admin"
+    },
+    {
+      "id": 6,
+      "name": "Cinema",
+      "age": "99",
+      "profile": "Admin"
+    }
+  ]
+}
