@@ -2,7 +2,7 @@ import { Action, createFeatureSelector, createReducer, createSelector, on } from
 import { UserModel } from 'src/app/models/user-model';
 import * as fromUserActions from './user.actions';
 
-export interface UserState {
+export interface UsersState {
 
   users: UserModel[],
   user: UserModel | null,
@@ -10,7 +10,7 @@ export interface UserState {
 
 }
 
-export const initialState: UserState = {
+export const initialState: UsersState = {
   users: [],
   user: null,
   error: ''
@@ -54,15 +54,15 @@ export function usersReducer(state = initialState, action: Action) {
   return _usersReducer(state, action);
 }
 
-const getUsersFeatureSate = createFeatureSelector<UserState>('users');
+const getUsersFeatureSate = createFeatureSelector<UsersState>('users');
 
-export const getUsers = createSelector(getUsersFeatureSate, (state: UserState) => state.users);
+export const getUsers = createSelector(getUsersFeatureSate, (state: UsersState) => state.users);
 
-export const getUsersAdministrator = createSelector(getUsersFeatureSate, (state: UserState) => state.users.filter((user: UserModel) => user.profile === 'Admin'));
+export const getUsersAdministrator = createSelector(getUsersFeatureSate, (state: UsersState) => state.users.filter((user: UserModel) => user.profile === 'Admin'));
 
-export const getUsersOlderThan50 = createSelector(getUsersFeatureSate, (state: UserState) => state.users.filter((user: UserModel) => user.age >= 50));
+export const getUsersOlderThan50 = createSelector(getUsersFeatureSate, (state: UsersState) => state.users.filter((user: UserModel) => user.age >= 50));
 
-export const getUser = createSelector(getUsersFeatureSate, (state: UserState) => state.user);
+export const getUser = createSelector(getUsersFeatureSate, (state: UsersState) => state.user);
 
-export const getUserError = createSelector(getUsersFeatureSate, (state: UserState) => state.error);
+export const getUserError = createSelector(getUsersFeatureSate, (state: UsersState) => state.error);
 

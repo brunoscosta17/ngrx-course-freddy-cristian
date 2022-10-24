@@ -16,7 +16,7 @@ export class UsersEffects {
       exhaustMap(() => this.userService.getUsers()
         .pipe(
           map(payload => fromUsersActions.loadUsersSuccess({ payload }),
-            catchError(error => of(fromUsersActions.loadUsersFail({ error }))))
+          catchError(error => of(fromUsersActions.loadUsersFail({ error }))))
           )
         )
       )
