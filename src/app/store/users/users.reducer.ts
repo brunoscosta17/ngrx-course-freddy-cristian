@@ -1,4 +1,4 @@
-import { Action, createFeatureSelector, createReducer, createSelector, on } from '@ngrx/store';
+import { Action, createFeatureSelector, createReducer, createSelector, on, props } from '@ngrx/store';
 import { UserModel } from 'src/app/models/user-model';
 import * as fromUserActions from './user.actions';
 
@@ -59,6 +59,8 @@ const getUsersFeatureSate = createFeatureSelector<UsersState>('users');
 export const getUsers = createSelector(getUsersFeatureSate, (state: UsersState) => state.users);
 
 export const getUsersAdministrator = createSelector(getUsersFeatureSate, (state: UsersState) => state.users.filter((user: UserModel) => user.profile === 'Admin'));
+
+export const getUsersByProfile = createSelector(getUsersFeatureSate, (state: UsersState, props: { profile: string }) => state.users.filter((user: UserModel) => user.profile === props.profile));
 
 export const getUsersOlderThan50 = createSelector(getUsersFeatureSate, (state: UsersState) => state.users.filter((user: UserModel) => user.age >= 50));
 

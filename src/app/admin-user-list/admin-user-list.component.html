@@ -1,0 +1,134 @@
+<p>Admin User List 1</p>
+
+<table class="table">
+  <thead>
+    <tr>
+      <td>ID</td>
+      <td>Name</td>
+      <td>Age</td>
+      <td>Profile</td>
+      <td>Actions</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of adminUsersList1$ | async">
+      <td>{{ user.id }}</td>
+      <td>{{ user.name }}</td>
+      <td>{{ user.age }}</td>
+      <td>{{ user.profile }}</td>
+      <td>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="edit(user.id)">Edit</button>
+        <button type="button" class="btn btn-secondary" (click)="remove(user.id)">Remove</button>
+      </td>
+
+    </tr>
+  </tbody>
+</table>
+
+<p>Admin User List 2</p>
+
+<table class="table">
+  <thead>
+    <tr>
+      <td>ID</td>
+      <td>Name</td>
+      <td>Age</td>
+      <td>Profile</td>
+      <td>Actions</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of adminUsersList2">
+      <td>{{ user.id }}</td>
+      <td>{{ user.name }}</td>
+      <td>{{ user.age }}</td>
+      <td>{{ user.profile }}</td>
+      <td>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="edit(user.id)">Edit</button>
+        <button type="button" class="btn btn-secondary" (click)="remove(user.id)">Remove</button>
+      </td>
+
+    </tr>
+  </tbody>
+</table>
+
+<p>Admin User List 3</p>
+
+<table class="table">
+  <thead>
+    <tr>
+      <td>ID</td>
+      <td>Name</td>
+      <td>Age</td>
+      <td>Profile</td>
+      <td>Actions</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of adminUsersList3">
+      <td>{{ user.id }}</td>
+      <td>{{ user.name }}</td>
+      <td>{{ user.age }}</td>
+      <td>{{ user.profile }}</td>
+      <td>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="edit(user.id)">Edit</button>
+        <button type="button" class="btn btn-secondary" (click)="remove(user.id)">Remove</button>
+      </td>
+
+    </tr>
+  </tbody>
+</table>
+
+<p>Admin User List 4</p>
+
+<table class="table">
+  <thead>
+    <tr>
+      <td>ID</td>
+      <td>Name</td>
+      <td>Age</td>
+      <td>Profile</td>
+      <td>Actions</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of adminUsersList4">
+      <td>{{ user.id }}</td>
+      <td>{{ user.name }}</td>
+      <td>{{ user.age }}</td>
+      <td>{{ user.profile }}</td>
+      <td>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="edit(user.id)">Edit</button>
+        <button type="button" class="btn btn-secondary" (click)="remove(user.id)">Remove</button>
+      </td>
+
+    </tr>
+  </tbody>
+</table>
+
+<p>Admin User List 5</p>
+
+<table class="table">
+  <thead>
+    <tr>
+      <td>ID</td>
+      <td>Name</td>
+      <td>Age</td>
+      <td>Profile</td>
+      <td>Actions</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of adminUsersList5$ | async">
+      <td>{{ user.id }}</td>
+      <td>{{ user.name }}</td>
+      <td>{{ user.age }}</td>
+      <td>{{ user.profile }}</td>
+      <td>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="edit(user.id)">Edit</button>
+        <button type="button" class="btn btn-secondary" (click)="remove(user.id)">Remove</button>
+      </td>
+
+    </tr>
+  </tbody>
+</table>

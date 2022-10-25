@@ -2,7 +2,6 @@ import { AppState } from './../store/users/app-state';
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { UserModel } from '../models/user-model';
-import { UsersService } from '../repositories/user-service';
 import { Store } from '@ngrx/store';
 import * as fromUsersActions from '../store/users/user.actions';
 import * as fromUsersSelector from '../store/users/users.reducer';
@@ -14,13 +13,22 @@ import * as fromUsersSelector from '../store/users/users.reducer';
 })
 export class UserListComponent implements OnInit {
 
-
   usersList$: Observable<UserModel[]> = this.store.select(fromUsersSelector.getUsers);
+
+  user$: Observable<UserModel | null> = this.store.select(fromUsersSelector.getUser);
 
   constructor(private store: Store<AppState>) { }
 
   ngOnInit(): void {
     this.store.dispatch(fromUsersActions.loadUsers());
+  }
+
+  edit(id: number): void {
+    this.store.dispatch(fromUsersActions.loadUser({ payload: id }));
+  }
+
+  remove(id: number): void {
+    this.store.dispatch(fromUsersActions.deleteUser({ payload: id }));
   }
 
 }

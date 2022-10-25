@@ -23,8 +23,10 @@ export class UserRegistrationComponent {
     if(this.user.id === 0) {
       this.userService.addUser(this.user).subscribe();
       this.store.dispatch(fromUsersActions.createUser({ payload: this.user }));
+      this.user = { id: 0, name: "", age: 0, profile: "" };
     } else {
       this.store.dispatch(fromUsersActions.updateUser({ payload: this.user }));
+      this.user = { id: 0, name: "", age: 0, profile: "" };
     }
   }
 

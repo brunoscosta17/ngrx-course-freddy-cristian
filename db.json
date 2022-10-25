@@ -26,14 +26,8 @@
     },
     {
       "id": 5,
-      "name": "",
-      "age": 0,
-      "profile": "Admin"
-    },
-    {
-      "id": 6,
-      "name": "Cinema",
-      "age": "99",
+      "name": "Maria Bizantina",
+      "age": "98",
       "profile": "Admin"
     },
     {
@@ -49,39 +43,21 @@
       "profile": "Admin"
     },
     {
-      "id": 9,
-      "name": "Maria Cândida da Silva Costa",
-      "age": "58",
-      "profile": "Consultant"
-    },
-    {
-      "id": 10,
-      "name": "Maria Cândida da Silva Costa",
-      "age": "58",
-      "profile": "Consultant"
-    },
-    {
-      "id": 11,
-      "name": "Maria Cândida da Silva Costa",
-      "age": "58",
-      "profile": "Consultant"
-    },
-    {
-      "id": 12,
-      "name": "Maria Cândida da Silva Costa",
-      "age": "58",
-      "profile": "Consultant"
-    },
-    {
-      "id": 13,
-      "name": "Maria Cândida da Silva Costa",
-      "age": "58",
-      "profile": "Consultant"
-    },
-    {
       "id": 14,
       "name": "Maria Cândida da Silva Costa",
       "age": "58",
+      "profile": "Consultant"
+    },
+    {
+      "id": 15,
+      "name": "Bruno da Silva Costa",
+      "age": "34",
+      "profile": "Admin"
+    },
+    {
+      "id": 16,
+      "name": "Gás de Cozinha",
+      "age": "22",
       "profile": "Consultant"
     }
   ]
